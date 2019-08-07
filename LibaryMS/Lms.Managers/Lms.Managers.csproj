@@ -41,7 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionManagers\LibrarianLoginManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lms.Core\Lms.Core.csproj">
+      <Project>{dece3a94-a36d-4f61-8234-64dd13fb32e2}</Project>
+      <Name>Lms.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lms.Persistancis\Lms.Persistancis.csproj">
+      <Project>{4cf9e5a2-0220-4655-afdb-c3633888b3b0}</Project>
+      <Name>Lms.Persistancis</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewManagers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
