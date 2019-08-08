@@ -52,6 +52,7 @@ namespace LibaryManagementSystem.Librarian
 
                         Session["UserName"] = _LibrarianLogin.UserName;
                         ShowMessage("Login", MessageType.Success);
+                        Response.Redirect("~/Librarian/Books/Add");
                          
 
                     }
