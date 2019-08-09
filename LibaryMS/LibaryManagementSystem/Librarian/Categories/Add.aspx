@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Librarian/Librarian.Master" AutoEventWireup="true" CodeBehind="Add.aspx.cs" Inherits="LibaryManagementSystem.Librarian.Categories.Add" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <form runat="server" style="height:100%">
+    <form runat="server" style="height: 100%">
         <br />
         <h4>Add a new Category</h4>
         <p class="text-danger">
@@ -31,7 +31,7 @@
             <div class="form-group">
                 <div class="col-md-offset-2 col-md-10">
                     <asp:Button runat="server" ID="AddButton" Text="Add" CssClass="btn btn-info btn-md" Width="120px" OnClick="AddButton_Click1" />
-                    <asp:Button runat="server" ID="DeleteButton" Text="Delete" CssClass="btn btn-info btn-md" Width="120px" OnClick="DeleteButton_Click"/>
+                    <asp:Button runat="server" ID="DeleteButton" Text="Delete" CssClass="btn btn-info btn-md" Width="120px" OnClick="DeleteButton_Click" />
                 </div>
             </div>
             <div class="form-group">
@@ -57,4 +57,5 @@
             </div>
         </div>
     </form>
+    <link href="../../Content/GridviewStyle.css" rel="stylesheet" />
 </asp:Content>

@@ -70,5 +70,26 @@ namespace Lms.Persistancis.ActionRepositories
 
             return _CategoryList;
         }
+        public List<Category> GetAllWithStatus()
+        {
+            var _CategoryList = new List<Category>();
+            string query = ("Select *From Categories");
+            var reader = _MainRepository.Reader(query, _MainRepository.ConnectionString());
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    var _Category = new Category();
+                    _Category.Code = (reader["Code"].ToString());
+                    _Category.Name = reader["Name"].ToString();
+                    _Category.Status = reader["Status"].ToString();
+
+                    _CategoryList.Add(_Category);
+                }
+            }
+            reader.Close();
+
+            return _CategoryList;
+        }
     }
 }

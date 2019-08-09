@@ -35,5 +35,9 @@ namespace Lms.Managers.ActionManagers
         {
             return _CategoriesRepository.GetAll();
         }
+        public List<Category> GetAllWithStatus()
+        {
+            return _CategoriesRepository.GetAllWithStatus();
+        }
     }
 }

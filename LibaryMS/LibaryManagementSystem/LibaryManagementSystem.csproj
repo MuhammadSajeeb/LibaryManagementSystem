@@ -1897,6 +1897,7 @@
     <Content Include="Librarian\Categories\images\Sajib.jpg" />
     <Content Include="Librarian\Categories\images\twitter_corner_black.png" />
     <Content Include="Librarian\Categories\images\twitter_corner_blue.png" />
+    <Content Include="Librarian\Categories\Status.aspx" />
     <Content Include="Librarian\Librarian.Master" />
     <Content Include="Librarian\Books\assets\css\bootstrap.css.map" />
     <Content Include="Librarian\Books\assets\css\bootstrap.min.css.map" />
@@ -2534,6 +2535,13 @@
     </Compile>
     <Compile Include="Librarian\Categories\Add.aspx.designer.cs">
       <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Librarian\Categories\Status.aspx.cs">
+      <DependentUpon>Status.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Librarian\Categories\Status.aspx.designer.cs">
+      <DependentUpon>Status.aspx</DependentUpon>
     </Compile>
     <Compile Include="Librarian\Librarian.Master.cs">
       <DependentUpon>Librarian.Master</DependentUpon>
