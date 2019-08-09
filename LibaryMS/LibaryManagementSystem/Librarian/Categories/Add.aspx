@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Librarian/Librarian.Master" AutoEventWireup="true" CodeBehind="Add.aspx.cs" Inherits="LibaryManagementSystem.Librarian.Categories.Add" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-<form runat="server">
-        <br/>
+    <form runat="server" style="height:100%">
+        <br />
         <h4>Add a new Category</h4>
         <p class="text-danger">
             <asp:Literal runat="server" ID="ErrorMessage" />
@@ -9,13 +10,6 @@
 
         <div class="form-horizontal">
             <hr />
-            <%--<asp:ValidationSummary runat="server" CssClass="text-danger" />--%>
-            <div class="form-group">
-                <div class="col-md-10">
-                    <div class="messagealert" id="alert_container">
-                    </div>
-                </div>
-            </div>
             <div class="form-group">
                 <div class="col-md-12">
                     <asp:Label runat="server" ID="lblCategoryCode" AssociatedControlID="txtCategoryCode" CssClass="control-label" Text="Category Code"></asp:Label>
@@ -36,35 +30,31 @@
             </div>
             <div class="form-group">
                 <div class="col-md-offset-2 col-md-10">
-                    <asp:Button runat="server" ID="AddButton" Text="Add" CssClass="btn btn-info btn-lg" Width="200px" />
+                    <asp:Button runat="server" ID="AddButton" Text="Add" CssClass="btn btn-info btn-md" Width="120px" OnClick="AddButton_Click1" />
+                    <asp:Button runat="server" ID="DeleteButton" Text="Delete" CssClass="btn btn-info btn-md" Width="120px" OnClick="DeleteButton_Click"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-1 col-md-12">
+                    <br />
+                    <asp:GridView ID="CategoiresGridView" runat="server" Width="100%" CssClass="table table-striped table-bordered table-hover" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="10" ForeColor="Black" GridLines="Horizontal" AllowPaging="True" PageSize="2" CellSpacing="10" OnPageIndexChanging="CategoiresGridView_PageIndexChanging" OnSelectedIndexChanged="CategoiresGridView_SelectedIndexChanged">
+                        <Columns>
+                            <asp:TemplateField HeaderText="Serial No" ItemStyle-Width="130">
+                                <ItemTemplate>
+                                    <asp:Label ID="lblSerialNo" Text='<%# Container.DataItemIndex + 1 %>' runat="server" />
+                                </ItemTemplate>
+                                <ItemStyle Width="130px"></ItemStyle>
+                            </asp:TemplateField>
+                            <asp:BoundField DataField="Code" HeaderText="Category Code" />
+                            <asp:BoundField DataField="Name" HeaderText="Category Name" />
+                            <asp:CommandField HeaderText="Action" SelectText="Edit" ShowSelectButton="True">
+                                <ItemStyle ForeColor="#CC0000" />
+                            </asp:CommandField>
+                        </Columns>
+                        <PagerStyle Font-Bold="true" Font-Size="Small" ForeColor="#3399FF" />
+                    </asp:GridView>
                 </div>
             </div>
         </div>
-        <style type="text/css">
-            .messagealert {
-                width: 358px;
-                margin-left: 120px;
-            }
-        </style>
-        <script type="text/javascript">
-            function ShowMessage(message, messagetype) {
-                var cssclass;
-                switch (messagetype) {
-                    case 'Success':
-                        cssclass = 'alert-success'
-                        break;
-                    case 'Failed':
-                        cssclass = 'alert-danger'
-                        break;
-                    case 'Warning':
-                        cssclass = 'alert-warning'
-                        break;
-                    default:
-                        cssclass = 'alert-info'
-                }
-                $('#alert_container').append('<div id="alert_div" style="margin: 0 0.5%; -webkit-box-shadow: 3px 4px 6px #999;" class="alert fade in ' + cssclass + '"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><strong>' + messagetype + '!</strong> <span>' + message + '</span></div>');
-            }
-        </script>
     </form>
-
 </asp:Content>
