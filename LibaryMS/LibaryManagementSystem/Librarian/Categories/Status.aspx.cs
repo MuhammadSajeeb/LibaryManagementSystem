@@ -25,7 +25,8 @@ namespace LibaryManagementSystem.Librarian.Categories
         }
         protected void CategoiresGridView_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            string code = CategoiresGridView.SelectedRow.Cells[1].Text;
+            Response.Redirect("~/Librarian/Categories/ChangeStatus.aspx?code=" + code);
         }
 
         protected void CategoiresGridView_PageIndexChanging(object sender, GridViewPageEventArgs e)

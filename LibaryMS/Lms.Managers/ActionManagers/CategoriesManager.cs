@@ -39,5 +39,17 @@ namespace Lms.Managers.ActionManagers
         {
             return _CategoriesRepository.GetAllWithStatus();
         }
+        public Category GetDataByCode(string code)
+        {
+            return _CategoriesRepository.GetDataByCode(code);
+        }
+        public int RunningStatus(Category _Category)
+        {
+            return _CategoriesRepository.RunningStatus(_Category);
+        }
+        public int StopStatus(Category _Category)
+        {
+            return _CategoriesRepository.StopStatus(_Category);
+        }
     }
 }

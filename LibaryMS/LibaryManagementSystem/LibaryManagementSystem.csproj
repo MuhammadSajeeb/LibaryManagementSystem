@@ -1117,6 +1117,7 @@
     <Content Include="Librarian\Categories\assets\scss\style.css" />
     <Content Include="Librarian\Categories\assets\scss\variables.css" />
     <Content Include="Librarian\Categories\assets\scss\widgets.css" />
+    <Content Include="Librarian\Categories\ChangeStatus.aspx" />
     <Content Include="Librarian\Categories\images\admin.jpg" />
     <Content Include="Librarian\Categories\images\avatar\1.jpg" />
     <Content Include="Librarian\Categories\images\avatar\2.jpg" />
@@ -2535,6 +2536,13 @@
     </Compile>
     <Compile Include="Librarian\Categories\Add.aspx.designer.cs">
       <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Librarian\Categories\ChangeStatus.aspx.cs">
+      <DependentUpon>ChangeStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Librarian\Categories\ChangeStatus.aspx.designer.cs">
+      <DependentUpon>ChangeStatus.aspx</DependentUpon>
     </Compile>
     <Compile Include="Librarian\Categories\Status.aspx.cs">
       <DependentUpon>Status.aspx</DependentUpon>

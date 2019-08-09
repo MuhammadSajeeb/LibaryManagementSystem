@@ -91,5 +91,34 @@ namespace Lms.Persistancis.ActionRepositories
 
             return _CategoryList;
         }
+        public Category GetDataByCode(string Code)
+        {
+            Category _Category = null;
+
+            string query = "select *From Categories Where Code='" + Code + "'";
+            var reader = _MainRepository.Reader(query, _MainRepository.ConnectionString());
+            if (reader.HasRows)
+            {
+                reader.Read();
+                _Category = new Category();
+                _Category.Code = reader["Code"].ToString();
+                _Category.Name = reader["Name"].ToString();
+                _Category.Status = reader["Status"].ToString();
+            }
+            reader.Close();
+
+            return _Category;
+        }
+        public int RunningStatus(Category _Category)
+        {
+            string query = "Update Categories SET  Status='Running' WHERE Code='" + _Category.Code + "' ";
+            return _MainRepository.ExecuteNonQuery(query, _MainRepository.ConnectionString());
+        }
+        public int StopStatus(Category _Category)
+        {
+            string query = "Update Categories SET  Status='Stop' WHERE Code='" + _Category.Code + "' ";
+            return _MainRepository.ExecuteNonQuery(query, _MainRepository.ConnectionString());
+        }
+
     }
 }
