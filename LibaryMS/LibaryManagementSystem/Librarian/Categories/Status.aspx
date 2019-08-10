@@ -8,7 +8,7 @@
             <div class="form-group">
                 <div class="col-md-offset-1 col-md-12">
                     <br />
-                    <asp:GridView ID="CategoiresGridView" runat="server" Width="100%" CssClass="table table-striped table-bordered table-hover" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="10" ForeColor="Black" GridLines="Horizontal" AllowPaging="True" PageSize="2" CellSpacing="10" OnPageIndexChanging="CategoiresGridView_PageIndexChanging" OnSelectedIndexChanged="CategoiresGridView_SelectedIndexChanged">
+                    <asp:GridView ID="CategoiresGridView" runat="server" Width="100%" CssClass="table table-striped table-bordered table-hover " AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="10" ForeColor="Black" GridLines="Horizontal" AllowPaging="True" PageSize="2" CellSpacing="10" OnPageIndexChanging="CategoiresGridView_PageIndexChanging" OnSelectedIndexChanged="CategoiresGridView_SelectedIndexChanged">
                         <Columns>
                             <asp:TemplateField HeaderText="Serial No" ItemStyle-Width="130">
                                 <ItemTemplate>
@@ -30,5 +30,4 @@
         </div>
     </form>
     <link href="../../Content/GridviewStyle.css" rel="stylesheet" />
-
 </asp:Content>

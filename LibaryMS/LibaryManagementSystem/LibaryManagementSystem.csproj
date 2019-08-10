@@ -2590,6 +2590,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Librarian\Books\BookImages\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
