@@ -125,6 +125,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Images\npilogo.jpg" />
     <Content Include="Librarian\Books\Add.aspx" />
     <Content Include="Librarian\Books\assets\css\animate.css" />
     <Content Include="Librarian\Books\assets\css\bootstrap-select.css" />
@@ -2505,6 +2506,10 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="Student\Book\Images\programming-C.jpg" />
+    <Content Include="Student\Book\Issue.aspx" />
+    <Content Include="Student\Login.aspx" />
+    <Content Include="Student\Register.aspx" />
     <Content Include="TestGridviewViewState.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -2581,6 +2586,34 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="Student\Book\Issue.aspx.cs">
+      <DependentUpon>Issue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\Book\Issue.aspx.designer.cs">
+      <DependentUpon>Issue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentPanel.Master.cs">
+      <DependentUpon>StudentPanel.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\StudentPanel.Master.designer.cs">
+      <DependentUpon>StudentPanel.Master</DependentUpon>
+    </Compile>
     <Compile Include="TestGridviewViewState.aspx.cs">
       <DependentUpon>TestGridviewViewState.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2604,6 +2637,7 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <Content Include="Student\StudentPanel.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

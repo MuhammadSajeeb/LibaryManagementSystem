@@ -44,6 +44,7 @@
     <Compile Include="ActionRepositories\BooksRepository.cs" />
     <Compile Include="ActionRepositories\CategoriesRepository.cs" />
     <Compile Include="ActionRepositories\LibrarianLoginRepository.cs" />
+    <Compile Include="ActionRepositories\StudentRegisterRepository.cs" />
     <Compile Include="DatabaseConnection\MainRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

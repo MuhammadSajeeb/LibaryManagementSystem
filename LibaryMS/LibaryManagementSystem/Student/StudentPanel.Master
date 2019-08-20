@@ -1,5 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="LibaryManagementSystem.SiteMaster" %>
-
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="StudentPanel.master.cs" Inherits="LibaryManagementSystem.Student.StudentPanel" %>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -50,8 +49,7 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a runat="server" href="~/Student/Login.aspx">Student Login</a></li>
-                        <li><a runat="server" href="~/Librarian/Login.aspx">Librarian Login</a></li>
+                        <li><a runat="server" href="~/Student/Login.aspx">Logout</a></li>
                     </ul>
                 </div>
             </div>
