@@ -15,6 +15,7 @@ namespace LibaryManagementSystem.Student.Book
             if(!IsPostBack)
             {
                 ShowMessage("তুমি এক মাসে পাঁচটির বেশি বই ইস্যু করতে পারবে না ", MessageType.নোটিশ);
+                lblAvailableQty.Text = DateTime.Now.Year.ToString();
             }
         }
         protected void ShowMessage(string Message, MessageType type)
@@ -23,7 +24,7 @@ namespace LibaryManagementSystem.Student.Book
         }
         protected void BookIssueButton_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

@@ -13,6 +13,7 @@ namespace LibaryManagementSystem.Librarian.Categories
     {
         private readonly CategoriesManager _CategoriesManager = new CategoriesManager();
         string Code;
+         
         protected void Page_Load(object sender, EventArgs e)
         {
             if(!IsPostBack)

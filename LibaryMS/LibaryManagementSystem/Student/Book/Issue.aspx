@@ -9,6 +9,7 @@
         <h2>Books Issue</h2>
         <hr />
         <div class="form-group">
+            <asp:Label runat="server" ID="Label1" AssociatedControlID="CategoryDropDownList" CssClass="col-md-2 control-label"></asp:Label>
             <div class="col-md-10">
                 <div class="messagealert" id="alert_container">
                 </div>

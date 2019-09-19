@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Book.cs" />
+    <Compile Include="Models\BookIssue.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\LibrarianLogin.cs" />
     <Compile Include="Models\StudentRegister.cs" />
